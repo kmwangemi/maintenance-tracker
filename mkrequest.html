@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Maintenance Tracker System Login Form</title>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<!-- Header -->
+			<header id="header">
+			<h1> Maintenance Tracker System </h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="login.html">Home</a></li>
+						<li><a href="userviewrequest.html">View Requests</a></li>
+						<li><a href="login.html">Log out</a></li>
+					</ul>
+				</nav>
+			</header>
+
+<div id="regForm">
+
+<form id="frmRegister" name="frmRegister" method="post" action="regComplete.htm">
+
+	<fieldset>
+		
+			<p>
+				<label for="fName">First Name:</label>
+					<input name="fName" type="text" class="text" id="fName" tabindex="40" />
+			</p>   
+			<p>
+				<label for="lName">Last Name:</label>
+					<input name="lName" type="text" class="text" id="lName" tabindex="50" />
+			</p>
+			<p> Choose the type of service
+				<select name="region" id="region" tabindex="60">
+					<option value="usae" selected="selected">Repair</option>
+					<option value="ha">Maintenance</option>
+				</select>
+			</p>
+			<p>How long have you been using the gadget?<br />
+				<label>
+					<input type="radio" name="surfLength" value="newbie" id="surfLength_0" tabindex="70" />
+					0 - 2 years
+				</label>
+						<br />
+				<label>
+					<input type="radio" name="surfLength" value="medium" id="surfLength_1" tabindex="80" />
+					3 - 5 years
+				</label>
+						<br />
+				<label>
+					<input type="radio" name="surfLength" value="experienced" id="surfLength_2" tabindex="90" />
+					6 +
+				</label>
+			</p>
+      
+			<p>
+				<label for="comments">Describe the problem briefly:</label>
+					<br />
+						<textarea name="comments" id="comments" cols="45" rows="5" tabindex="140"></textarea>
+			</p>
+			<p>
+				<input type="checkbox" name="journal" id="journal" tabindex="150" />
+				<label for="journal">I want to submit the problem!</label>
+			</p>
+
+			<p>
+				<input type="submit" name="submit" id="submit" value="SUBMIT" tabindex="160" />
+
+					<br />
+									
+			</p>
+ 
+    </fieldset>
+</form>
+
+</div>
+
+</body>
+</html>
